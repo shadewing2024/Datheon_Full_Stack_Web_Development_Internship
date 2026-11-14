@@ -1,0 +1,131 @@
+/* Custom Glassmorphism & Micro-animations */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+        .dark .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, rgb(0, 228, 228), #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gradient-border {
+            border-image: linear-gradient(to right, #06b6d4, #8b5cf6) 1;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 4px;
+        }
+        .dark ::webkit-scrollbar-thumb {
+            background: #334155;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #06b6d4;
+        }
+        /* Typewriter Cursor */
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .img {
+            transform: translateX(0px);
+            animation: float 6s ease-out infinite;
+         }
+         @keyframes float {
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-20px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+         }
+         
+        .dark .decoration {
+            background:
+                radial-gradient(circle at 15% 15%, #131230 0, transparent 35%),
+                radial-gradient(circle at 85% 85%, #0a0c2e 0, transparent 35%)
+                rgb(2 6 23 / var(--tw-bg-opacity, 1));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+         }
+
+        .decoration {
+            background:
+                radial-gradient(circle at 15% 15%, #e5edff 0, transparent 35%),
+                radial-gradient(circle at 85% 85%, #d2e0ff 0, transparent 35%)
+                rgb(255 255 255 / var(--tw-bg-opacity, 1));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+         }
+
+         /* timeline bar */
+         /* Diamond Shape Styling */
+.diamond-outer {
+    transform: rotate(45deg);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 5px;
+}
+
+.diamond-inner {
+    transform: scale(0);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.4s ease;
+}
+
+/* Active State jab scroll wahan pahunche */
+.timeline-milestone.active .diamond-outer {
+    border-radius: 5px;
+    box-shadow: 0 0 15px #2563eb;
+}
+
+.timeline-milestone.active .diamond-inner {
+    transform: scale(1);
+    background: linear-gradient(135deg, rgb(0, 228, 228), #2563eb 100%);
+    transform: rotate(180deg);
+    border-radius: 3px;
+}
+
+/* Small Sub-node Diamond */
+.diamond-small {
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.timeline-subnode.active .diamond-small {
+    border-radius: 3px;
+}
+
+         
