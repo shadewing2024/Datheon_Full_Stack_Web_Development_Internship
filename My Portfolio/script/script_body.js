@@ -44,7 +44,7 @@ const skillsData = [
                 title: 'Real-Time Weather Forecast App',
                 fullDesc: `It's a live weather telemetry application. The user searches for any global city to retrieve real-time weather metrics: current temperature, weather conditions (sunny, rainy, overcast) with dynamic icons, humidity, wind speed, atmospheric pressure, and a 5-day temperature forecast. Handle network loading spinners and invalid city errors gracefully.`,
                 tags: ['JavaScript (ES6+)', 'TailwindCSS', 'HTML5', 'CSS3', 'OpenWeatherMap API'],
-                image: 'assets/images/weather app.png',
+                image: 'assets/images/Weather app.webp',
                 liveUrl: 'https://example.com',
                 githubUrl: 'https://github.com/shadewing2024/Datheon_Full_Stack_Web_Development_Internship/tree/main/Real%20Time%20wheather%20App',
                 features: [
@@ -59,7 +59,7 @@ const skillsData = [
                 title: 'Smart Air Quality Prediction and Alert System',
                 fullDesc: 'Smart Air Quality Prediction and Alert System is an Android-based application developed to monitor air pollution, predict Air Quality Index (AQI), and provide users with timely alerts about unhealthy air quality conditions. The application integrates a Machine Learning model with TensorFlow Lite to predict AQI using eight input features. It also uses Firebase to store AQI history and manage user alerts. The primary objective is to help users understand air pollution levels, monitor environmental conditions, and make informed decisions to reduce exposure to harmful air pollutants.',
                 tags: ['Java', 'Python', 'Machine Learning', 'TF Lite', 'Firebase', 'SQLite', 'XML', 'Android'],
-                image: 'assets/images/Smart Air Quality.png',
+                image: 'assets/images/Smart Air Quality.webp',
                 liveUrl: 'https://example.com',
                 githubUrl: 'https://github.com',
                 features: [
@@ -80,7 +80,7 @@ const skillsData = [
                 title: 'Dynamic Task Manager & Progress Tracker',
                 fullDesc: 'TaskFlow is a task management application designed to help users organize daily activities, manage priorities, and track task completion through a simple and user-friendly interface. It allows users to create, edit, and delete tasks, categorize them into Work, Personal, and Study categories, assign due dates, and filter tasks by All, Active, and Completed.',
                 tags: ['Node.js', 'TailwindCSS', 'Express.js', 'HTML 5', 'Mongoose', 'Rest API', 'MongoDB'],
-                image: 'assets/images/task manager.png',
+                image: 'assets/images/task manager.webp',
                 liveUrl: 'https://example.com',
                 githubUrl: 'https://github.com/shadewing2024/Pynexia_Internship/tree/main/Week-1/To%20Do%20List',
                 features: [
@@ -96,7 +96,7 @@ const skillsData = [
                 title: 'Employee Attendance System',
                 fullDesc: 'An employee attendance management web application developed to manage employee attendance, track daily working hours, and maintain attendance records. The system includes authentication, office timing configuration, and automated attendance scheduling.',
                 tags: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT', 'bcrypt', 'REST API'],
-                image: 'assets/images/employee attendance.png',
+                image: 'assets/images/employee attendance.webp',
                 liveUrl: 'https://example.com',
                 githubUrl: 'https://github.com/shadewing2024/Pynexia_Internship/tree/main/Week-2/Employee%20Attendance%20System',
                 features: [
@@ -118,7 +118,7 @@ const skillsData = [
                 title: 'JWT Authentication & Login System',
                 fullDesc: 'A secure user authentication backend developed using Node.js, Express.js, and MongoDB. The system provides user registration, login, JWT-based authentication, password hashing, and protected user profile access through RESTful APIs.',
                 tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JSON Web Token (JWT)', 'bcrypt', 'dotenv', 'REST API'],
-                image: 'assets/images/JWT.png',
+                image: 'assets/images/JWT.webp',
                 liveUrl: 'https://example.com',
                 githubUrl: 'https://github.com/shadewing2024/Pynexia_Internship/tree/main/Week-1/Login%20System%20Backend',
                 features: [
@@ -201,7 +201,7 @@ const skillsData = [
         /* -------------------------------------------------------------
            4. TYPEWRITER ANIMATION (Hero Title)
            ------------------------------------------------------------- */
-        const phrases = ['Full-Stack Developer', 'CS Senior Student', 'UI/UX Enthusiast', 'Problem Solver'];
+        const phrases = ['Software Engineer', 'Full-Stack Developer', 'UI/UX Enthusiast', 'Problem Solver'];
         let phraseIdx = 0;
         let charIdx = 0;
         let isDeleting = false;
@@ -286,7 +286,7 @@ const skillsData = [
                 card.innerHTML = `
                     <div>
                         <div class="relative overflow-hidden cursor-pointer" onclick="openProjectModal('${project.id}')">
-                            <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="${project.image}" alt="${project.title}" loading="lazy" decoding="async" class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white gap-2 font-semibold text-xs">
                                 <i class="fa-solid fa-expand"></i> View Details
                             </div>
@@ -319,7 +319,7 @@ const skillsData = [
             const tagsHTML = project.tags.map(t => `<span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20">${t}</span>`).join(' ');
 
             modalContent.innerHTML = `
-                <img src="${project.image}" alt="${project.title}" class="w-full h-56 sm:h-72 object-cover rounded-2xl shadow-md">
+                <img src="${project.image}" alt="${project.title}" loading="lazy" decoding="async" class="w-full h-56 sm:h-72 object-cover rounded-2xl shadow-md">
                 
                 <div class="space-y-4">
                     <div class="flex flex-wrap gap-2">${tagsHTML}</div>
@@ -427,18 +427,6 @@ const skillsData = [
                 }
             });
             document.getElementById('deployTabContent').innerHTML = deployGuides[tab];
-        }
-
-        /* -------------------------------------------------------------
-           9. RESUME MOCK DOWNLOAD HELPER
-           ------------------------------------------------------------- */
-        function downloadResumeMock() {
-            const link = document.createElement('a');
-            const mockContent = "Alex Rivera - Resume\nComputer Science Senior\nEmail: alex.rivera@example.com\nSkills: HTML5, CSS3, JavaScript, React, Node.js";
-            const blob = new Blob([mockContent], { type: 'text/plain' });
-            link.href = URL.createObjectURL(blob);
-            link.download = 'Alex_Rivera_Resume.txt';
-            link.click();
         }
 
         /* -------------------------------------------------------------

@@ -6,8 +6,7 @@
     <title>Muhammad Taha | Full-Stack Software Engineer</title>
 
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script/script_head.js"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
     
     <!-- FontAwesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300 antialiased selection:bg-cyan-500 selection:text-white dark:decoration decoration">
@@ -36,7 +36,7 @@
                         &lt;/&gt;
                     </span>
                     <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white">
-                        Full Stack<span class="gradient-text">.dev</span>
+                        <span class="gradient-text">.dev</span>
                     </span>
                 </a>
 
@@ -111,10 +111,10 @@
                             <span>View Work</span>
                         </a>
 
-                        <button onclick="downloadResumeMock()" class="px-6 py-3.5 rounded-xl font-bold text-sm text-gray-400 shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 transition-all transform hover:-translate-y-1 flex items-center gap-2" title="Download Mock Resume PDF">
+                        <a href="assets/CV/Resume.pdf" download="Resume.pdf" class="px-6 py-3.5 rounded-xl font-bold text-sm text-gray-400 shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 transition-all transform hover:-translate-y-1 flex items-center gap-2" title="Download Resume PDF">
                             <i class="fa-solid fa-download"></i>
                             <span>Resume</span>
-                        </button>
+                        </a>
                     </div>
 
                     <!-- Social Media Quick Links -->
@@ -268,10 +268,10 @@
                     </div>
 
                     <div class="pt-6">
-                        <button onclick="downloadResumeMock()" class="w-full py-3 rounded-xl font-bold text-sm bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-cyan-600 dark:hover:bg-cyan-400 dark:hover:text-slate-900 transition-all flex items-center justify-center gap-2 shadow-md">
+                        <a href="assets/CV/Resume.pdf" download="Resume.pdf" class="w-full py-3 rounded-xl font-bold text-sm bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-cyan-600 dark:hover:bg-cyan-400 dark:hover:text-slate-900 transition-all flex items-center justify-center gap-2 shadow-md">
                             <i class="fa-solid fa-file-pdf"></i>
                             <span>Download Full Resume PDF</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -415,6 +415,6 @@
     </div>
 
     <!-- JAVASCRIPT LOGIC -->
-    <script src="script/script_body.js"></script>
+    <script src="script/script_body.js" defer></script>
 </body>
 </html>
