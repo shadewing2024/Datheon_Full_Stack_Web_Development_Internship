@@ -46,7 +46,7 @@ const skillsData = [
                 tags: ['JavaScript (ES6+)', 'TailwindCSS', 'HTML5', 'CSS3', 'OpenWeatherMap API'],
                 image: 'assets/images/weather app.png',
                 liveUrl: 'https://example.com',
-                githubUrl: 'https://github.com',
+                githubUrl: 'https://github.com/shadewing2024/Datheon_Full_Stack_Web_Development_Internship/tree/main/Real%20Time%20wheather%20App',
                 features: [
                     'Dynamically change the background based on whether conditions',
                     'Current location weather detection',
@@ -82,7 +82,7 @@ const skillsData = [
                 tags: ['Node.js', 'TailwindCSS', 'Express.js', 'HTML 5', 'Mongoose', 'Rest API', 'MongoDB'],
                 image: 'assets/images/task manager.png',
                 liveUrl: 'https://example.com',
-                githubUrl: 'https://github.com',
+                githubUrl: 'https://github.com/shadewing2024/Pynexia_Internship/tree/main/Week-1/To%20Do%20List',
                 features: [
                     'Create, Read, Update and Delete tasks',
                     'Organize tasks into Work, Personal and Study categories.',
@@ -98,7 +98,7 @@ const skillsData = [
                 tags: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT', 'bcrypt', 'REST API'],
                 image: 'assets/images/employee attendance.png',
                 liveUrl: 'https://example.com',
-                githubUrl: 'https://github.com',
+                githubUrl: 'https://github.com/shadewing2024/Pynexia_Internship/tree/main/Week-2/Employee%20Attendance%20System',
                 features: [
                     'JWT-based authentication.',
                     'Employee registration and login.',
@@ -120,7 +120,7 @@ const skillsData = [
                 tags: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JSON Web Token (JWT)', 'bcrypt', 'dotenv', 'REST API'],
                 image: 'assets/images/JWT.png',
                 liveUrl: 'https://example.com',
-                githubUrl: 'https://github.com',
+                githubUrl: 'https://github.com/shadewing2024/Pynexia_Internship/tree/main/Week-1/Login%20System%20Backend',
                 features: [
                     'User registration and account creation',
                     'Secure user login.',
