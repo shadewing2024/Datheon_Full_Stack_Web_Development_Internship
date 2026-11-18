@@ -61,7 +61,7 @@ const skillsData = [
                 tags: ['Java', 'Python', 'Machine Learning', 'TF Lite', 'Firebase', 'SQLite', 'XML', 'Android'],
                 image: 'assets/images/Smart Air Quality.webp',
                 liveUrl: 'https://example.com',
-                githubUrl: 'https://github.com',
+                githubUrl: 'https://github.com/shadewing2024/Projects/tree/main/Final%20Deliverable',
                 features: [
                     'User registration and authentication using Firebase Auth.',
                     'Admin and Citizen dashboard',
